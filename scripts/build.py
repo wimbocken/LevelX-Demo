@@ -187,7 +187,7 @@ def domain_block(domain_id, items, intro=""):
     css = domain_id if domain_id in DOMAIN_NAME and domain_id != "nxt" else "stem"
     if domain_id == "nxt":
         css_class = "domain-block"
-        style = ' style="--domain:#1F2421;--tint:#F4F5F1"'
+        style = ' style="--domain:#0B4D3B;--tint:#EEF5EF"'
         title = "7e jaar – schakeljaar"
     else:
         css_class = f"domain-block d-{domain_id}"
@@ -383,9 +383,9 @@ def home():
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <p class="eyebrow on-dark">Secundair expertenonderwijs · Hasselt</p>
+      <p class="eyebrow on-dark">Groene campus · Hasselt</p>
       <h1>Kies jouw level.</h1>
-      <p class="lead on-dark">Ontdek je talent, word expert. Level X is secundair expertenonderwijs in Hasselt: acht domeinen, één school.</p>
+      <p class="lead on-dark">Ontdek je talent, word expert. Level X is secundair expertenonderwijs op een groene campus in Hasselt: acht domeinen, één school, leren tussen bomen en innovatie.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="inschrijven/">Inschrijven →</a>
         <a class="btn btn-ghost" href="nieuws/#agenda">Infomomenten</a>
@@ -425,11 +425,11 @@ def home():
     </div>
   </div>
 </section>
-<section class="section" id="campus">
+<section class="section section-campus" id="campus">
   <div class="wrap">
     <p class="eyebrow">Groene campus</p>
     <h2>Leren tussen bomen en innovatie</h2>
-    <p class="lead">Deze cijfers staan in het ontwerp van de demo. Ze zijn niet teruggevonden op levelx.be en zijn dus niet bevestigd.</p>
+    <p class="lead">De school ligt op een campus in Hasselt. Hoe groen die precies is — bomen, oppervlakte, buitenruimte — staat niet op levelx.be. De cijfers hieronder komen uit het ontwerp en zijn niet bevestigd.</p>
     <div class="stats">
       <article class="stat"><b>120+</b><span>[te bevestigen]</span></article>
       <article class="stat"><b>2 ha</b><span>[te bevestigen]</span></article>
@@ -471,7 +471,7 @@ def home():
 </section>
 <section class="cta-band">
   <div class="wrap">
-    <h2>Klaar voor het volgende level? Schrijf je in of kom kennismaken.</h2>
+    <h2>Klaar voor het volgende level? Schrijf je in of kom de groene campus bekijken.</h2>
     <div class="cta-actions">
       <a class="btn btn-primary" href="inschrijven/">Inschrijven →</a>
       <a class="btn btn-ghost" href="contact/">Afspraak maken</a>
@@ -962,7 +962,8 @@ def other_pages():
           <li>Menu knop met aria-expanded. Sluiten kan met Escape.</li>
           <li>Zoeken en filteren op het studieaanbod werkt met het toetsenbord. Het aantal resultaten staat in een live region.</li>
           <li>Elke richting is een disclosure (details/summary), ook zonder extra script. Daaronder staat het metroplan als tekstlijst.</li>
-          <li>Tekst op geel, wit en antraciet haalt WCAG AA. Op de badge van Business (#E8584C) staat zwarte tekst, omdat antraciet daar op 4,45:1 blijft en nét onder AA voor kleine tekst zit.</li>
+          <li>De grote vlakken zijn wit, zachtgroen (#EEF5EF / #E3F0E6) of diepgroen (#0B4D3B). Antraciet (#1F2421) is voor tekst. Wit en #E3F0E6 op #0B4D3B halen WCAG AA. De focusrand is diepgroen op lichte vlakken en amber op diepgroene knoppen en in de footer.</li>
+          <li>Op de badge van Business (#E8584C) staat zwarte tekst, omdat antraciet daar op 4,45:1 blijft en nét onder AA voor kleine tekst zit.</li>
           <li>Logo heeft een tekstalternatief. Fotoplekken zijn benoemde plaatshouders, geen decoratieve lege beelden.</li>
           <li>Beweging is uit als je in het systeem verminderde beweging vraagt.</li>
         </ul>
