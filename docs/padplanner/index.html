@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Padplanner | Level X Hasselt (demo)</title>
+  <meta name="description" content="Stel stap voor stap een studieroute samen op het metroplan van GO! Next Level X in Hasselt. Demo voor ouders.">
+  <link rel="icon" href="../assets/img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/padplanner.css?v=31a9fb5568">
+</head>
+<body>
+  <a class="skip" href="#inhoud">Spring naar de inhoud</a>
+  <a class="skip skip-map" href="#overzicht">Sla het metroplan over</a>
+  <p class="demo-banner">Demo — dit is geen officiële website van GO! Next Level X. Niet-geverifieerde gegevens staan tussen [te bevestigen]. <span class="variant-switch">Versie: <a href="../">Groen</a> · <a href="../wauw/">Wauw</a> · <a href="../cinematic/">Cinematic</a> · <a href="../professioneel/">Professioneel</a> · <a href="./" aria-current="page">Padplanner</a></span></p>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="logo" href="../">
+        <img src="../assets/img/logo.svg" width="56" height="56" alt="Level X, secundair expertenonderwijs">
+      </a>
+      <nav id="pad-nav" class="pad-nav" aria-label="Hoofdmenu">
+        <a href="../studieaanbod/">Studieaanbod</a>
+        <a href="../contact/">Contact</a>
+        <a href="../inschrijven/">Inschrijven</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="pad-nav" aria-label="Menu openen">
+        <span class="bars" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+    </div>
+  </header>
+  <main id="inhoud">
+    <div class="wrap intro">
+      <p class="eyebrow">Voor ouders</p>
+      <h1>Welke route past bij je kind?</h1>
+      <p class="lead">Van de eerste graad tot wat daarna kan. Je kiest stap voor stap. We tonen alleen richtingen die op elkaar aansluiten, volgens het metroplan.</p>
+    </div>
+    <div class="wrap layout">
+      <div class="planner">
+        <div class="mode" role="group" aria-label="Manier van zoeken">
+          <button type="button" id="mode-heen" aria-pressed="true">Ik bouw een route</button>
+          <button type="button" id="mode-terug" aria-pressed="false">Ik wil later…</button>
+        </div>
+        <div id="planner-body">
+          <p>Het metroplan wordt geladen.</p>
+        </div>
+      </div>
+      <aside class="summary" id="overzicht" aria-labelledby="overzicht-titel">
+        <h2 id="overzicht-titel">Jullie route</h2>
+        <div id="summary-body">
+          <p>Nog geen keuze. Begin bij de eerste graad.</p>
+        </div>
+        <div class="summary-actions">
+          <button type="button" class="btn btn-line" id="btn-print">Print/PDF</button>
+          <button type="button" class="btn btn-line" id="btn-share">Deel deze route</button>
+        </div>
+        <p id="share-status" class="fine" role="status"></p>
+        <label class="fine share-label" id="share-label">Link van deze route
+          <input id="share-url" type="text" readonly hidden>
+        </label>
+        <div class="cta">
+          <a class="btn btn-green" href="../contact/">Maak een afspraak</a>
+          <a class="btn btn-line" href="../inschrijven/">Inschrijven</a>
+        </div>
+        <p class="fine" id="phone-line"></p>
+      </aside>
+      <details class="map-panel" id="map-panel">
+        <summary>Metroplan</summary>
+        <div class="legend" aria-label="Legende">
+          <p><span class="leg solid"></span> Doorstroom, volle lijn</p>
+          <p><span class="leg dash"></span> Dubbele finaliteit, streepjeslijn</p>
+          <p><span class="leg dot"></span> Arbeidsmarkt, stippellijn</p>
+          <p><span class="leg collector"></span> 7e jaar, met 7NXT</p>
+        </div>
+        <div class="map-scroll" tabindex="0" aria-describedby="map-help">
+          <p id="map-help" class="fine">Klik of tab naar een halte om die route te openen. De gekozen lijn licht op.</p>
+          <div id="map-host"></div>
+        </div>
+        <div id="map-words">
+          <h2 class="h3">Route in woorden</h2>
+          <ol id="map-text"><li>Nog geen route gekozen.</li></ol>
+        </div>
+      </details>
+    </div>
+  </main>
+  <div id="live" class="visually-hidden" aria-live="polite"></div>
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p>Level X – secundair expertenonderwijs<br>Vildersstraat 3, 3500 Hasselt<br><a id="footer-phone" href="tel:+3211211010">011 21 10 10</a> · <a href="mailto:info@levelx.be">info@levelx.be</a></p>
+      <p><a href="../studieaanbod/">Studieaanbod</a> · <a href="../privacy/">Privacy</a> · <a href="../toegankelijkheid/">Toegankelijkheid</a></p>
+    </div>
+  </footer>
+  <noscript>
+    <p class="wrap">De Padplanner heeft JavaScript nodig. Het studieaanbod staat ook als tekst op de <a href="../studieaanbod/">studieaanbodpagina</a>.</p>
+  </noscript>
+  <script src="../assets/js/padplanner.js?v=31a9fb5568"></script>
+</body>
+</html>

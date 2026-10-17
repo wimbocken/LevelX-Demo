@@ -501,7 +501,8 @@ def home():
                 '<a href="./" aria-current="page">Groen</a> · '
                 '<a href="wauw/">Wauw</a> · '
                 '<a href="cinematic/">Cinematic</a> · '
-                '<a href="professioneel/">Professioneel</a></span>'
+                '<a href="professioneel/">Professioneel</a> · '
+                '<a href="padplanner/">Padplanner</a></span>'
             ),
         ),
     )
@@ -574,6 +575,7 @@ def studieaanbod():
       <p class="eyebrow">Metroplan</p>
       <h2 id="metro-titel">Van de 2e graad tot het 7e jaar</h2>
       <p class="lead">Elke lijn is een domein. Open een richting voor de finaliteit en de bron. Met het toetsenbord: tab naar een richting en druk op Enter of spatie.</p>
+      <p><a class="btn btn-dark" href="../padplanner/">Stel een route samen in de Padplanner</a></p>
       {''.join(blocks)}
     </section>
     <section id="tekstlijst" aria-labelledby="tekst-titel">
