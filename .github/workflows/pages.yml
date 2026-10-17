@@ -10,6 +10,9 @@ permissions:
   pages: write
   id-token: write
 
+# A newer push cancels a deploy that is already running. A job that was
+# only queued (for example waiting on the github-pages environment) is not
+# always cancelled; the gate below refuses to publish that older commit.
 concurrency:
   group: pages
   cancel-in-progress: true
@@ -22,9 +25,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Skip deploy when main has moved on
+        id: gate
+        run: |
+          git fetch --no-tags origin main
+          head="$(git rev-parse HEAD)"
+          main="$(git rev-parse origin/main)"
+          if [ "$head" != "$main" ]; then
+            echo "Stale deploy: this run is $head but origin/main is $main."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Deploying $head"
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/configure-pages@v5
+        if: steps.gate.outputs.skip != 'true'
       - uses: actions/upload-pages-artifact@v3
+        if: steps.gate.outputs.skip != 'true'
         with:
           path: docs
       - id: deployment
+        if: steps.gate.outputs.skip != 'true'
         uses: actions/deploy-pages@v4

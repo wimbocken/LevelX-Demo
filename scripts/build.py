@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Generate the static Level X demo into /docs."""
 
+import hashlib
 import html
 from pathlib import Path
 
@@ -235,8 +236,16 @@ NAV = [
 ]
 
 
+def asset_version():
+    digest = hashlib.sha256()
+    for name in ("assets/css/styles.css", "assets/js/main.js"):
+        digest.update((ROOT / name).read_bytes())
+    return digest.hexdigest()[:10]
+
+
 def chrome(title, description, depth, active, body):
     root = "../" * depth
+    version = asset_version()
     nav_links = []
     for href, label, key in NAV:
         current = ' aria-current="page"' if key == active else ""
@@ -252,7 +261,7 @@ def chrome(title, description, depth, active, body):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{root}assets/css/styles.css">
+  <link rel="stylesheet" href="{root}assets/css/styles.css?v={version}">
 </head>
 <body>
   <a class="skip" href="#inhoud">Spring naar de inhoud</a>
@@ -329,7 +338,7 @@ def chrome(title, description, depth, active, body):
       <span><a href="{root}privacy/">Privacy</a> · <a href="{root}privacy/#cookies">Cookies</a> · <a href="{root}toegankelijkheid/">Toegankelijkheid</a></span>
     </div>
   </footer>
-  <script src="{root}assets/js/main.js"></script>
+  <script src="{root}assets/js/main.js?v={version}"></script>
 </body>
 </html>
 '''
