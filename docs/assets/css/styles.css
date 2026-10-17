@@ -162,6 +162,16 @@ p { margin: 0 0 1rem; }
   font-weight: 800;
 }
 
+.variant-switch a {
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.demo-banner a[aria-current="page"] {
+  font-weight: 800;
+  text-decoration: underline;
+}
+
 .util-bar {
   background: var(--green-tint);
   color: var(--green-deep);
