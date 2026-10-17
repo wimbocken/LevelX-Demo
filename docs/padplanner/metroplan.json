@@ -1,0 +1,2919 @@
+{
+  "meta": {
+    "titel": "Level X – metroplan dataset voor padplanner",
+    "versie": "2026-10-17",
+    "bronnen": [
+      "Figma CnrTpaTgx1qQTKtY5XRIZ3 (read-only): frame 109:2 \"Metro Prototype / Default\", detailschermen 114:2, 114:85, 114:189, 114:271, 114:296",
+      "levelx.be studierichtingpagina's (https://www.levelx.be/studieaanbod/<slug>)",
+      "levelx.be studieaanbod-overzicht (labels nieuw/FLEX, duale lijst)"
+    ],
+    "legende": {
+      "finaliteit": {
+        "D": "Doorstroom (plan: volle lijn)",
+        "DF": "Dubbele finaliteit (plan: streepjeslijn)",
+        "A": "Arbeidsmarkt (plan: stippellijn)"
+      },
+      "duaal": "aparte entry per duale variant (plan: geel label DUAAL LEREN); leren_werken=true",
+      "status": "bevestigd = plan en levelx.be stemmen overeen; te bevestigen = afwijking of enkel in één bron",
+      "graad": "2 = 3e+4e jaar, 3 = 5e+6e jaar, 7 = 7e (specialisatie)jaar"
+    },
+    "contact": {
+      "adres": "Vildersstraat 3, 3500 Hasselt",
+      "telefoon": "011 21 10 10",
+      "email": "info@levelx.be"
+    },
+    "tellingen": {
+      "richtingen": 75,
+      "richtingen_per_graad": {
+        "2": 27,
+        "3": 35,
+        "7": 13
+      },
+      "duale_varianten": 25,
+      "te_bevestigen_items": 9,
+      "edges": 180,
+      "edges_te_bevestigen": 26
+    }
+  },
+  "stroom": [
+    {
+      "id": "1a",
+      "naam": "A-stroom (1A en 2A)",
+      "label_plan": "1A / 2A",
+      "lijnstijl": "vol",
+      "url": "https://www.levelx.be/studieaanbod/eerste-graad-a-stroom",
+      "status": "bevestigd",
+      "naar_domeinen": [
+        "business",
+        "care",
+        "design",
+        "it",
+        "stem"
+      ]
+    },
+    {
+      "id": "1b",
+      "naam": "B-stroom (1B en 2B)",
+      "label_plan": "1B / 2B",
+      "lijnstijl": "streep",
+      "url": "https://www.levelx.be/studieaanbod/eerste-graad-b-stroom",
+      "status": "te bevestigen",
+      "naar_domeinen": [
+        "business",
+        "care",
+        "design",
+        "stem"
+      ],
+      "notitie": "In plan geen lijn naar IT. Doorstroom per finaliteit hangt af van optie/klassenraad (levelx.be) – te bevestigen."
+    },
+    {
+      "id": "2b-opstroom",
+      "naam": "2B opstroom",
+      "label_plan": "NIEUW · 2B OPSTROOM",
+      "labels": [
+        "nieuw"
+      ],
+      "url": "https://www.levelx.be/studieaanbod-overzicht",
+      "status": "te bevestigen",
+      "notitie": "Alleen in plan; inhoud en doorstroom niet beschreven op levelx.be."
+    }
+  ],
+  "domeinen": [
+    {
+      "id": "level-1",
+      "naam": "Level 1",
+      "kleur": "#EC7844",
+      "kleur_variabele": "domein/level-1",
+      "kleur_tint_variabele": "domein/level-1-tint",
+      "logo": {
+        "figma_component": "BDsP8VNFqMAMlfT95GKDsM 18:52 · variant \"Domein=Level 1\"",
+        "prototype_node": "CnrTpaTgx1qQTKtY5XRIZ3 109:248",
+        "prototype_naam": "GONEXT - Level 1 (zonder GoNext) 1"
+      },
+      "detailscherm_prototype": null
+    },
+    {
+      "id": "business",
+      "naam": "Business",
+      "kleur": "#E8584C",
+      "kleur_variabele": "domein/business",
+      "kleur_tint_variabele": "domein/business-tint",
+      "logo": {
+        "figma_component": "BDsP8VNFqMAMlfT95GKDsM 18:52 · variant \"Domein=Business\"",
+        "prototype_node": "CnrTpaTgx1qQTKtY5XRIZ3 109:244",
+        "prototype_naam": "Business - logo-01 1"
+      },
+      "detailscherm_prototype": "114:2"
+    },
+    {
+      "id": "care",
+      "naam": "Care",
+      "kleur": "#A06094",
+      "kleur_variabele": "domein/care",
+      "kleur_tint_variabele": "domein/care-tint",
+      "logo": {
+        "figma_component": "BDsP8VNFqMAMlfT95GKDsM 18:52 · variant \"Domein=Care\"",
+        "prototype_node": "CnrTpaTgx1qQTKtY5XRIZ3 109:245",
+        "prototype_naam": "Care - logo(zonderGoNext)-01 1"
+      },
+      "detailscherm_prototype": "114:85"
+    },
+    {
+      "id": "design",
+      "naam": "Design",
+      "kleur": "#0098A4",
+      "kleur_variabele": "domein/design",
+      "kleur_tint_variabele": "domein/design-tint",
+      "logo": {
+        "figma_component": "BDsP8VNFqMAMlfT95GKDsM 18:52 · variant \"Domein=Design\"",
+        "prototype_node": "CnrTpaTgx1qQTKtY5XRIZ3 109:246",
+        "prototype_naam": "Design - logo(zonderGoNext)-01 1"
+      },
+      "detailscherm_prototype": "114:189"
+    },
+    {
+      "id": "it",
+      "naam": "IT",
+      "kleur": "#F0883C",
+      "kleur_variabele": "domein/it",
+      "kleur_tint_variabele": "domein/it-tint",
+      "logo": {
+        "figma_component": "BDsP8VNFqMAMlfT95GKDsM 18:52 · variant \"Domein=IT\"",
+        "prototype_node": "CnrTpaTgx1qQTKtY5XRIZ3 109:247",
+        "prototype_naam": "IT - logo(zonderGoNext) 1"
+      },
+      "detailscherm_prototype": "114:271"
+    },
+    {
+      "id": "stem",
+      "naam": "STEM",
+      "kleur": "#60A430",
+      "kleur_variabele": "domein/stem",
+      "kleur_tint_variabele": "domein/stem-tint",
+      "logo": {
+        "figma_component": "BDsP8VNFqMAMlfT95GKDsM 18:52 · variant \"Domein=STEM\"",
+        "prototype_node": "CnrTpaTgx1qQTKtY5XRIZ3 109:249",
+        "prototype_naam": "STEM - logo(zonderGoNext) 1"
+      },
+      "detailscherm_prototype": "114:296"
+    },
+    {
+      "id": "leren-werken",
+      "naam": "Leren & Werken",
+      "kleur": "#046C44",
+      "kleur_variabele": "domein/leren-werken",
+      "kleur_tint_variabele": "domein/leren-werken-tint",
+      "logo": {
+        "figma_component": "BDsP8VNFqMAMlfT95GKDsM 18:52 · variant \"Domein=Leren & Werken\"",
+        "prototype_node": "CnrTpaTgx1qQTKtY5XRIZ3 109:250",
+        "prototype_naam": "LerenWerken - logo(zonderGoNext) 1"
+      },
+      "detailscherm_prototype": null
+    },
+    {
+      "id": "wereldklas",
+      "naam": "Wereldklas",
+      "kleur": "#FCCC00",
+      "kleur_variabele": "domein/wereldklas",
+      "kleur_tint_variabele": "domein/wereldklas-tint",
+      "logo": {
+        "figma_component": "BDsP8VNFqMAMlfT95GKDsM 18:52 · variant \"Domein=Wereldklas\"",
+        "prototype_node": "CnrTpaTgx1qQTKtY5XRIZ3 109:251",
+        "prototype_naam": "Wereld klas - picto 1"
+      },
+      "detailscherm_prototype": null
+    }
+  ],
+  "richtingen": [
+    {
+      "id": "bus-2-bw",
+      "naam": "Bedrijfswetenschappen",
+      "alias_plan": null,
+      "graad": 2,
+      "domein": "business",
+      "finaliteit": "D",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/bedrijfswetenschappen",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "bus-2-bo",
+      "naam": "Bedrijf en Organisatie",
+      "alias_plan": null,
+      "graad": 2,
+      "domein": "business",
+      "finaliteit": "DF",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/bedrijf-organisatie",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "bus-2-ol",
+      "naam": "Organisatie & Logistiek",
+      "alias_plan": null,
+      "graad": 2,
+      "domein": "business",
+      "finaliteit": "A",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/organisatie-logistiek",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "bus-2-winkel-d",
+      "naam": "Medewerker winkel",
+      "alias_plan": "Medewerker Winkel",
+      "graad": 2,
+      "domein": "business",
+      "finaliteit": "A",
+      "duaal": true,
+      "leren_werken": true,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/schoonmaker-copy-2",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": "URL-slug op levelx.be is \"schoonmaker-copy-2\" (rommelig).",
+      "type": "richting"
+    },
+    {
+      "id": "bus-2-verpakker-d",
+      "naam": "Verpakker",
+      "alias_plan": null,
+      "graad": 2,
+      "domein": "business",
+      "finaliteit": "A",
+      "duaal": true,
+      "leren_werken": true,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/verpakker",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "bus-3-bw",
+      "naam": "Bedrijfswetenschappen",
+      "alias_plan": null,
+      "graad": 3,
+      "domein": "business",
+      "finaliteit": "D",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/bedrijfswetenschappen-copy",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "bus-3-bo",
+      "naam": "Bedrijfsorganisatie",
+      "alias_plan": null,
+      "graad": 3,
+      "domein": "business",
+      "finaliteit": "DF",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/bedrijf-organisatie-copy",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "bus-3-oos",
+      "naam": "Onthaal, organisatie & sales",
+      "alias_plan": "Onthaal, organisatie en sales",
+      "graad": 3,
+      "domein": "business",
+      "finaliteit": "A",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/onthaal-organisatie-sales",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "bus-3-oos-d",
+      "naam": "Onthaal, Organisatie en Sales",
+      "alias_plan": "Onthaal, organisatie en sales",
+      "graad": 3,
+      "domein": "business",
+      "finaliteit": "A",
+      "duaal": true,
+      "leren_werken": true,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/onthaal-organisatie-sales-duaal",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "bus-3-log-d",
+      "naam": "Logistiek",
+      "alias_plan": null,
+      "graad": 3,
+      "domein": "business",
+      "finaliteit": "A",
+      "duaal": true,
+      "leren_werken": true,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/logistiek-duaal",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "bus-7-ca-d",
+      "naam": "Commercieel assistent",
+      "alias_plan": null,
+      "graad": 7,
+      "domein": "business",
+      "finaliteit": "A",
+      "duaal": true,
+      "leren_werken": true,
+      "labels": [
+        "nieuw"
+      ],
+      "url": "https://www.levelx.be/studieaanbod/commercieel-assistent",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "care-2-mww",
+      "naam": "Maatschappij & welzijnswetenschappen",
+      "alias_plan": "Maatschappij & Welzijnswetenschappen",
+      "graad": 2,
+      "domein": "care",
+      "finaliteit": "D",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/maatschappij-welzijnswetenschappen",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "care-2-mw",
+      "naam": "Maatschappij & Welzijn",
+      "alias_plan": "Maatschappij & welzijn",
+      "graad": 2,
+      "domein": "care",
+      "finaliteit": "DF",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/maatschappij-welzijn",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "care-2-wl",
+      "naam": "Wellness & Lifestyle",
+      "alias_plan": null,
+      "graad": 2,
+      "domein": "care",
+      "finaliteit": "DF",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/wellness-lifestyle",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": "Plan en levelx.be: DF. Detailscherm Care (114:85) zegt \"Arbeidsmarkt\" – fout in detailscherm.",
+      "type": "richting"
+    },
+    {
+      "id": "care-2-zw",
+      "naam": "Zorg & Welzijn",
+      "alias_plan": null,
+      "graad": 2,
+      "domein": "care",
+      "finaliteit": "A",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/zorg-welzijn",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "care-2-hs",
+      "naam": "Haar- & Schoonheidsverzorging",
+      "alias_plan": "Haar- en Schoonheidsverzorging",
+      "graad": 2,
+      "domein": "care",
+      "finaliteit": "A",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/haar-schoonheidsverzorging",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "care-2-keuken-d",
+      "naam": "Medewerker keuken",
+      "alias_plan": "Keukenmedewerker",
+      "graad": 2,
+      "domein": "care",
+      "finaliteit": "A",
+      "duaal": true,
+      "leren_werken": true,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/medewerker-keuken",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": "Plan: Care-lijn; overzicht levelx.be: Leren & Werken (geen domein). Domein te bevestigen.",
+      "type": "richting"
+    },
+    {
+      "id": "care-2-fastfood-d",
+      "naam": "Medewerker fastfood",
+      "alias_plan": "Medewerker Fastfood",
+      "graad": 2,
+      "domein": "care",
+      "finaliteit": "A",
+      "duaal": true,
+      "leren_werken": true,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/leren-werken-medewerker-snackbar-taverne",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": "Slug \"medewerker-snackbar-taverne\". Domein: plan Care, site Leren & Werken.",
+      "type": "richting"
+    },
+    {
+      "id": "care-3-ww",
+      "naam": "Welzijnswetenschappen",
+      "alias_plan": null,
+      "graad": 3,
+      "domein": "care",
+      "finaliteit": "D",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/gezondheids-welzijnswetenschappen-copy-2",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "care-3-gz",
+      "naam": "Gezondheidszorg",
+      "alias_plan": null,
+      "graad": 3,
+      "domein": "care",
+      "finaliteit": "DF",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/gezondheids-welzijnswetenschappen-copy",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": "Plan, detailscherm en levelx.be: DF. (Onze Figma had D – gecorrigeerd.)",
+      "type": "richting"
+    },
+    {
+      "id": "care-3-ob",
+      "naam": "Opvoeding en begeleiding",
+      "alias_plan": null,
+      "graad": 3,
+      "domein": "care",
+      "finaliteit": "DF",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [
+        "nieuw"
+      ],
+      "url": "https://www.levelx.be/studieaanbod/opvoedingenbegeleiding",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "care-3-ws",
+      "naam": "Welness & Schoonheid",
+      "alias_plan": "Wellness & Schoonheid",
+      "graad": 3,
+      "domein": "care",
+      "finaliteit": "DF",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/wellness-lifestyle-copy",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": "Spelling \"Welness\" op overzicht, \"Wellness\" op richtingpagina. Plan + site: DF; detailscherm zegt \"Arbeidsmarkt\" – fout in detailscherm.",
+      "type": "richting"
+    },
+    {
+      "id": "care-3-haar",
+      "naam": "Haarverzorging",
+      "alias_plan": null,
+      "graad": 3,
+      "domein": "care",
+      "finaliteit": "A",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/haarzorg-copy",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "care-3-haar-d",
+      "naam": "Haarverzorging",
+      "alias_plan": null,
+      "graad": 3,
+      "domein": "care",
+      "finaliteit": "A",
+      "duaal": true,
+      "leren_werken": true,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/haarverzorging-duaal-3de-graad-bso",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "care-3-bzo",
+      "naam": "Basiszorg en ondersteuning",
+      "alias_plan": null,
+      "graad": 3,
+      "domein": "care",
+      "finaliteit": "A",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/verzorging-copy",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "care-3-bzo-d",
+      "naam": "Basiszorg en ondersteuning",
+      "alias_plan": null,
+      "graad": 3,
+      "domein": "care",
+      "finaliteit": "A",
+      "duaal": true,
+      "leren_werken": true,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/leren-werken-verzorgende",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": "Eigen pagina op levelx.be bestaat (slug leren-werken-verzorgende), maar staat niet in de duale lijst van het overzicht.",
+      "type": "richting"
+    },
+    {
+      "id": "care-3-rk-d",
+      "naam": "Restaurant en Keuken",
+      "alias_plan": "Restaurant & keuken",
+      "graad": 3,
+      "domein": "care",
+      "finaliteit": "A",
+      "duaal": true,
+      "leren_werken": true,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/restaurant-keuken-duaal",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": "Domein: plan Care, site Leren & Werken. In plan geen halte op de 7e-jaarslijn.",
+      "type": "richting"
+    },
+    {
+      "id": "care-3-awzw-d",
+      "naam": "Assistentie wonen, zorg en welzijn",
+      "alias_plan": "Assistentie wonen, zorg en welzijn",
+      "graad": 3,
+      "domein": "care",
+      "finaliteit": "A",
+      "duaal": true,
+      "leren_werken": true,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/assistent-wonen",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": "Pagina bestaat op levelx.be, maar richting ontbreekt op het studieaanbod-overzicht en in de demo.",
+      "type": "richting"
+    },
+    {
+      "id": "care-7-ks-d",
+      "naam": "Kapper-Stylist",
+      "alias_plan": null,
+      "graad": 7,
+      "domein": "care",
+      "finaliteit": "A",
+      "duaal": true,
+      "leren_werken": true,
+      "labels": [
+        "nieuw"
+      ],
+      "url": "https://www.levelx.be/studieaanbod/kapper-stylist-duaal-7de-specialisatiejaar",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "care-7-zk-d",
+      "naam": "Verzorgende/Zorgkundige",
+      "alias_plan": "Zorgkundige",
+      "graad": 7,
+      "domein": "care",
+      "finaliteit": "A",
+      "duaal": true,
+      "leren_werken": true,
+      "labels": [
+        "nieuw"
+      ],
+      "url": "https://www.levelx.be/studieaanbod/verzorgende-zorgkundige",
+      "url_bron": "pagina",
+      "status": "te bevestigen",
+      "notitie": "Naam plan \"Zorgkundige\" vs site \"Verzorgende/Zorgkundige\". Domein: plan Care, overzicht alleen in duale lijst.",
+      "type": "richting"
+    },
+    {
+      "id": "des-2-foto",
+      "naam": "Fotografie",
+      "alias_plan": null,
+      "graad": 2,
+      "domein": "design",
+      "finaliteit": "DF",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/fotografie",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "des-2-gt",
+      "naam": "Grafische technieken",
+      "alias_plan": null,
+      "graad": 2,
+      "domein": "design",
+      "finaliteit": "DF",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/grafische-technieken",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "des-2-de",
+      "naam": "Decor en Etalage",
+      "alias_plan": null,
+      "graad": 2,
+      "domein": "design",
+      "finaliteit": "A",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/decor-en-etalage-3e-jaar",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "des-2-pm",
+      "naam": "Printmedia",
+      "alias_plan": null,
+      "graad": 2,
+      "domein": "design",
+      "finaliteit": "A",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [
+        "nieuw"
+      ],
+      "url": "https://www.levelx.be/studieaanbod-overzicht",
+      "url_bron": "overzicht",
+      "status": "te bevestigen",
+      "notitie": "\"Nieuw\" op overzicht levelx.be, niet zo gemarkeerd in plan. Geen eigen 2e-graadspagina (printmedia-a beschrijft de 3e graad).",
+      "type": "richting"
+    },
+    {
+      "id": "des-2-schilder-d",
+      "naam": "Medewerker schilder",
+      "alias_plan": "Medewerker Schilder-behanger",
+      "graad": 2,
+      "domein": "design",
+      "finaliteit": "A",
+      "duaal": true,
+      "leren_werken": true,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/medewerker-schilder",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": "Naam plan \"Schilder-behanger\" vs site \"Medewerker schilder\".",
+      "type": "richting"
+    },
+    {
+      "id": "des-3-foto",
+      "naam": "Fotografie",
+      "alias_plan": null,
+      "graad": 3,
+      "domein": "design",
+      "finaliteit": "DF",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/fotografie-3de-graad-copy-2",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "des-3-cm",
+      "naam": "Crossmedia",
+      "alias_plan": null,
+      "graad": 3,
+      "domein": "design",
+      "finaliteit": "DF",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/crossmedia-d-a",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "des-3-dep",
+      "naam": "Decor, etalage & publiciteit",
+      "alias_plan": "Decor, etalage en publiciteit",
+      "graad": 3,
+      "domein": "design",
+      "finaliteit": "A",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod-overzicht",
+      "url_bron": "overzicht",
+      "status": "bevestigd",
+      "notitie": "Geen eigen richtingpagina gevonden; link naar overzicht.",
+      "type": "richting"
+    },
+    {
+      "id": "des-3-pm",
+      "naam": "Printmedia",
+      "alias_plan": null,
+      "graad": 3,
+      "domein": "design",
+      "finaliteit": "A",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/printmedia-a",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": "Plan: A (geen duaal). Detailscherm Design zegt \"Arbeidsmarkt / Duaal\" – geen duale Printmedia op levelx.be.",
+      "type": "richting"
+    },
+    {
+      "id": "des-3-ds-d",
+      "naam": "Decoratie- en schilderwerken",
+      "alias_plan": "Decoratie en schilderwerken",
+      "graad": 3,
+      "domein": "design",
+      "finaliteit": "A",
+      "duaal": true,
+      "leren_werken": true,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/decoratie-en-schilderwerken-duaal-3de-graad",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "des-7-fs-d",
+      "naam": "Fijnschilder",
+      "alias_plan": null,
+      "graad": 7,
+      "domein": "design",
+      "finaliteit": "A",
+      "duaal": true,
+      "leren_werken": true,
+      "labels": [
+        "nieuw"
+      ],
+      "url": "https://www.levelx.be/studieaanbod/fijnschilder",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "des-7-odd-d",
+      "naam": "Operator digitaal drukken",
+      "alias_plan": null,
+      "graad": 7,
+      "domein": "design",
+      "finaliteit": "A",
+      "duaal": true,
+      "leren_werken": true,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod-overzicht",
+      "url_bron": "geen",
+      "status": "te bevestigen",
+      "notitie": "Alleen in plan; niet op levelx.be (geen pagina, niet op overzicht of duale lijst).",
+      "type": "richting"
+    },
+    {
+      "id": "it-2-via-stem",
+      "naam": "Technologische wetenschappen met extra programmeren",
+      "alias_plan": "* (groen sterretje = STEM)",
+      "graad": 2,
+      "domein": "it",
+      "finaliteit": "D",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/technologische-wetenschappen-d",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": "Geen eigen IT-richting in de 2e graad; plan toont groen sterretje (STEM) op de doorstroomlijn.",
+      "type": "verwijzing",
+      "verwijst_naar": "stem-2-tw"
+    },
+    {
+      "id": "it-2-via-design",
+      "naam": "Grafische technieken of Elektromechanische technieken (met extra programmeren)",
+      "alias_plan": "* (blauwgroen sterretje = Design)",
+      "graad": 2,
+      "domein": "it",
+      "finaliteit": "DF",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/applicatie-en-databeheer-d-a",
+      "url_bron": "pagina",
+      "status": "te bevestigen",
+      "notitie": "Plan: Design-sterretje op DF-lijn (grafische technieken). levelx.be noemt als vooropleiding ook elektromechanische technieken (STEM) – niet zichtbaar in plan.",
+      "type": "verwijzing",
+      "verwijst_naar": [
+        "des-2-gt",
+        "stem-2-emt"
+      ]
+    },
+    {
+      "id": "it-3-icw",
+      "naam": "Informatica- en communicatiewetenschappen",
+      "alias_plan": null,
+      "graad": 3,
+      "domein": "it",
+      "finaliteit": "D",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/informatie-en-communicatiewetenschappen-d",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": "Slug zegt \"informatie-\" i.p.v. \"informatica-\".",
+      "type": "richting"
+    },
+    {
+      "id": "it-3-adb",
+      "naam": "Applicatie- en databeheer",
+      "alias_plan": null,
+      "graad": 3,
+      "domein": "it",
+      "finaliteit": "DF",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/applicatie-en-databeheer-d-a",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "stem-2-tw",
+      "naam": "Technologische wetenschappen",
+      "alias_plan": null,
+      "graad": 2,
+      "domein": "stem",
+      "finaliteit": "D",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/technologische-wetenschappen-d",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "stem-2-bsw",
+      "naam": "Biotechnologische STEM-wetenschappen",
+      "alias_plan": null,
+      "graad": 2,
+      "domein": "stem",
+      "finaliteit": "D",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/biotechnische-wetenschappen",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "stem-2-bt",
+      "naam": "Biotechnieken",
+      "alias_plan": null,
+      "graad": 2,
+      "domein": "stem",
+      "finaliteit": "DF",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [
+        "nieuw"
+      ],
+      "url": "https://www.levelx.be/studieaanbod/biotechnieken",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "stem-2-emt",
+      "naam": "Elektromechanische technieken",
+      "alias_plan": null,
+      "graad": 2,
+      "domein": "stem",
+      "finaliteit": "DF",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/elektromechanische-technieken-d-a",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "stem-2-auto",
+      "naam": "Auto (context elektriciteit)",
+      "alias_plan": "Auto – context binnen elektriciteit",
+      "graad": 2,
+      "domein": "stem",
+      "finaliteit": "A",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/auto-elektriciteit",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": "Paginatitel levelx.be: \"Elektriciteit context auto (A)\". Detailscherm STEM zegt \"Arbeidsmarkt / Duaal\" – geen duale 2e-graadsvariant op levelx.be.",
+      "type": "richting"
+    },
+    {
+      "id": "stem-2-elek",
+      "naam": "Elektriciteit",
+      "alias_plan": null,
+      "graad": 2,
+      "domein": "stem",
+      "finaliteit": "A",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/elektriciteit-a",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": "Detailscherm STEM zegt \"Arbeidsmarkt / Duaal\" – geen duale 2e-graadsvariant op levelx.be.",
+      "type": "richting"
+    },
+    {
+      "id": "stem-2-mech",
+      "naam": "Mechanica",
+      "alias_plan": null,
+      "graad": 2,
+      "domein": "stem",
+      "finaliteit": "A",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/mechanica-a",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": "Ontbreekt in detailscherm STEM.",
+      "type": "richting"
+    },
+    {
+      "id": "stem-2-hout",
+      "naam": "Hout",
+      "alias_plan": null,
+      "graad": 2,
+      "domein": "stem",
+      "finaliteit": "A",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [
+        "FLEX"
+      ],
+      "url": "https://www.levelx.be/studieaanbod/hout-a",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": "Ontbreekt in detailscherm STEM. FLEX-label alleen op levelx.be.",
+      "type": "richting"
+    },
+    {
+      "id": "stem-3-twe",
+      "naam": "Technologische wetenschappen en engineering",
+      "alias_plan": null,
+      "graad": 3,
+      "domein": "stem",
+      "finaliteit": "D",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/technologische-wetenschappen-engineering-d",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "stem-3-bcsw",
+      "naam": "Biotechnologische en chemische STEM-wetenschappen",
+      "alias_plan": null,
+      "graad": 3,
+      "domein": "stem",
+      "finaliteit": "D",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [
+        "nieuw"
+      ],
+      "url": "https://www.levelx.be/studieaanbod/biotechnische-chemische-stem-wetenschappen",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "stem-3-bct",
+      "naam": "Biotechnologische en chemische technieken",
+      "alias_plan": null,
+      "graad": 3,
+      "domein": "stem",
+      "finaliteit": "DF",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/biotechnische-chemische-wetenschappen",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "stem-3-emt",
+      "naam": "Elektromechanische technieken",
+      "alias_plan": null,
+      "graad": 3,
+      "domein": "stem",
+      "finaliteit": "DF",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/elektromechanische-technieken-d-a-derde-graad",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "stem-3-oma",
+      "naam": "Auto",
+      "alias_plan": "Onderhoudsmechanica auto",
+      "graad": 3,
+      "domein": "stem",
+      "finaliteit": "A",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/onderhoudsmechanica-auto-a",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": "Overzicht: \"Auto\"; pagina en plan: \"Onderhoudsmechanica auto\".",
+      "type": "richting"
+    },
+    {
+      "id": "stem-3-oma-d",
+      "naam": "Onderhoudsmechanica auto",
+      "alias_plan": null,
+      "graad": 3,
+      "domein": "stem",
+      "finaliteit": "A",
+      "duaal": true,
+      "leren_werken": true,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/auto-duaal",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": "Volgens levelx.be enkel in het 6e jaar. Niet op duale lijst overzicht.",
+      "type": "richting"
+    },
+    {
+      "id": "stem-3-ei",
+      "naam": "Elektrische installaties",
+      "alias_plan": null,
+      "graad": 3,
+      "domein": "stem",
+      "finaliteit": "A",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/elektrische-installaties-a",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "stem-3-ei-d",
+      "naam": "Elektrische installaties",
+      "alias_plan": null,
+      "graad": 3,
+      "domein": "stem",
+      "finaliteit": "A",
+      "duaal": true,
+      "leren_werken": true,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/elektriciteit-duaal",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": "Enkel 6e jaar (levelx.be). Slug \"elektriciteit-duaal\". Niet op duale lijst overzicht.",
+      "type": "richting"
+    },
+    {
+      "id": "stem-3-fi",
+      "naam": "Fietsinstallaties",
+      "alias_plan": null,
+      "graad": 3,
+      "domein": "stem",
+      "finaliteit": "A",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/fietsinstallaties-a",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "stem-3-fi-d",
+      "naam": "Fietsinstallaties",
+      "alias_plan": null,
+      "graad": 3,
+      "domein": "stem",
+      "finaliteit": "A",
+      "duaal": true,
+      "leren_werken": true,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod-overzicht",
+      "url_bron": "geen",
+      "status": "te bevestigen",
+      "notitie": "Alleen in plan; geen duale Fietsinstallaties op levelx.be.",
+      "type": "richting"
+    },
+    {
+      "id": "stem-3-car",
+      "naam": "Carrosserie",
+      "alias_plan": "Carrosserie (koetswerk)",
+      "graad": 3,
+      "domein": "stem",
+      "finaliteit": "A",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [
+        "FLEX"
+      ],
+      "url": "https://www.levelx.be/studieaanbod/carrosserie-a",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "stem-3-car-d",
+      "naam": "Carrosserie",
+      "alias_plan": "Carrosserie (koetswerk)",
+      "graad": 3,
+      "domein": "stem",
+      "finaliteit": "A",
+      "duaal": true,
+      "leren_werken": true,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/carrosserie-duaal",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": "Enkel 6e jaar (levelx.be). Niet op duale lijst overzicht.",
+      "type": "richting"
+    },
+    {
+      "id": "stem-3-bsi",
+      "naam": "Binnenschrijnwerk en interieur (Hout)",
+      "alias_plan": "Binnenschrijnwerk en interieur",
+      "graad": 3,
+      "domein": "stem",
+      "finaliteit": "A",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [
+        "FLEX"
+      ],
+      "url": "https://www.levelx.be/studieaanbod/binnenschrijnwerk-interieur-a",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": "A, geen duaal (plan + site). Onze Figma had DUAAL – gecorrigeerd.",
+      "type": "richting"
+    },
+    {
+      "id": "stem-7-abc",
+      "naam": "Autobus- en autocarchauffeur",
+      "alias_plan": null,
+      "graad": 7,
+      "domein": "stem",
+      "finaliteit": "A",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [
+        "nieuw"
+      ],
+      "url": "https://www.levelx.be/studieaanbod/autobus-en-autocarchauffeur-7de-specialisatiejaar",
+      "url_bron": "pagina",
+      "status": "te bevestigen",
+      "notitie": "Zwarte halte in plan zonder inkomende lijn: vooropleiding/toelating te bevestigen.",
+      "type": "richting"
+    },
+    {
+      "id": "stem-7-pm",
+      "naam": "Polyvalent mecanicien personenwagens en lichte bedrijfsvoertuigen",
+      "alias_plan": "Polyvalent mecanicien personenwagens",
+      "graad": 7,
+      "domein": "stem",
+      "finaliteit": "A",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/polyvalent-mecanicien-personenwagens-en-lichte-bedrijfsvoertuigen-7de-specialisatiejaar",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "stem-7-pm-d",
+      "naam": "Polyvalent mecanicien personenwagens en lichte bedrijfsvoertuigen",
+      "alias_plan": "Polyvalent mecanicien personenwagens",
+      "graad": 7,
+      "domein": "stem",
+      "finaliteit": "A",
+      "duaal": true,
+      "leren_werken": true,
+      "labels": [
+        "nieuw"
+      ],
+      "url": "https://www.levelx.be/studieaanbod/polyvalent-mecanicien-personenwagens-en-lichte-bedrijfsvoertuigen-duaal-7de-specialisatiejaar",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "stem-7-et",
+      "naam": "Elektrotechnicus",
+      "alias_plan": null,
+      "graad": 7,
+      "domein": "stem",
+      "finaliteit": "A",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/elektrotechnicus-7de-specialisatiejaar",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "stem-7-et-d",
+      "naam": "Electrotechnicus",
+      "alias_plan": "Elektrotechnicus",
+      "graad": 7,
+      "domein": "stem",
+      "finaliteit": "A",
+      "duaal": true,
+      "leren_werken": true,
+      "labels": [
+        "nieuw"
+      ],
+      "url": "https://www.levelx.be/studieaanbod/elektrotechnicus-duaal-7de-specialisatiejaar",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": "Spelling duale lijst \"Electrotechnicus\" vs \"Elektrotechnicus\" elders. Er bestaat ook een losse pagina /elektrotechnicus (duaal).",
+      "type": "richting"
+    },
+    {
+      "id": "stem-7-sc",
+      "naam": "Spuiter carrosserie",
+      "alias_plan": null,
+      "graad": 7,
+      "domein": "stem",
+      "finaliteit": "A",
+      "duaal": false,
+      "leren_werken": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/spuiter-carrosserie-7de-specialisatiejaar",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "stem-7-sc-d",
+      "naam": "Spuiter carrosserie",
+      "alias_plan": null,
+      "graad": 7,
+      "domein": "stem",
+      "finaliteit": "A",
+      "duaal": true,
+      "leren_werken": true,
+      "labels": [
+        "nieuw"
+      ],
+      "url": "https://www.levelx.be/studieaanbod/spuiter-carrosserie-duaal-7de-specialisatiejaar",
+      "url_bron": "pagina",
+      "status": "bevestigd",
+      "notitie": null,
+      "type": "richting"
+    },
+    {
+      "id": "stem-7-ib-d",
+      "naam": "Interieurbouwer",
+      "alias_plan": null,
+      "graad": 7,
+      "domein": "stem",
+      "finaliteit": "A",
+      "duaal": true,
+      "leren_werken": true,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod-overzicht",
+      "url_bron": "geen",
+      "status": "te bevestigen",
+      "notitie": "Alleen in plan; niet op levelx.be. (Pagina Binnenschrijnwerk noemt beroepskwalificatie \"interieurbouwer\".)",
+      "type": "richting"
+    }
+  ],
+  "speciaal": [
+    {
+      "id": "7nxt",
+      "naam": "7NXT – voorbereidend jaar op hoger onderwijs",
+      "alias_plan": "7NXT voorbereidend jaar op hoger onderwijs",
+      "graad": 7,
+      "domein": null,
+      "type": "schakeljaar",
+      "finaliteit": null,
+      "duaal": false,
+      "labels": [
+        "nieuw"
+      ],
+      "url": "https://www.levelx.be/studieaanbod/voorbereidend-jaar-hoger-onderwijs",
+      "status": "bevestigd",
+      "notitie": "levelx.be: verplicht voor wie met diploma arbeidsmarktfinaliteit (OK3) naar een professionele bachelor wil (vanaf sept. 2025). Overzicht schrijft \"NXT\"."
+    },
+    {
+      "id": "wk-okan",
+      "naam": "Wereldklas – onthaaljaar OKAN",
+      "graad": null,
+      "domein": "wereldklas",
+      "type": "onthaal",
+      "finaliteit": null,
+      "duaal": false,
+      "labels": [],
+      "url": "https://www.levelx.be/studieaanbod/wereldklas",
+      "status": "bevestigd",
+      "notitie": "Hasselt en Heusden-Zolder; vervolgschoolcoach."
+    }
+  ],
+  "uitstroom": [
+    {
+      "id": "uit-ho",
+      "naam": "Hoger onderwijs",
+      "type": "uitstroom"
+    },
+    {
+      "id": "uit-pba",
+      "naam": "Professionele bachelor (via 7NXT)",
+      "type": "uitstroom"
+    },
+    {
+      "id": "uit-am",
+      "naam": "Arbeidsmarkt",
+      "type": "uitstroom"
+    },
+    {
+      "id": "uit-vervolg",
+      "naam": "Vervolgonderwijs",
+      "type": "uitstroom"
+    }
+  ],
+  "edges": [
+    {
+      "van": "1a",
+      "naar": "dom:business",
+      "type": "instroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "1a",
+      "naar": "dom:care",
+      "type": "instroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "1a",
+      "naar": "dom:design",
+      "type": "instroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "1a",
+      "naar": "dom:it",
+      "type": "instroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "1a",
+      "naar": "dom:stem",
+      "type": "instroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "1b",
+      "naar": "dom:business",
+      "type": "instroom",
+      "bron": "plan",
+      "status": "te bevestigen",
+      "notitie": "In plan geen lijn naar IT. Doorstroom per finaliteit hangt af van optie/klassenraad (levelx.be) – te bevestigen."
+    },
+    {
+      "van": "1b",
+      "naar": "dom:care",
+      "type": "instroom",
+      "bron": "plan",
+      "status": "te bevestigen",
+      "notitie": "In plan geen lijn naar IT. Doorstroom per finaliteit hangt af van optie/klassenraad (levelx.be) – te bevestigen."
+    },
+    {
+      "van": "1b",
+      "naar": "dom:design",
+      "type": "instroom",
+      "bron": "plan",
+      "status": "te bevestigen",
+      "notitie": "In plan geen lijn naar IT. Doorstroom per finaliteit hangt af van optie/klassenraad (levelx.be) – te bevestigen."
+    },
+    {
+      "van": "1b",
+      "naar": "dom:stem",
+      "type": "instroom",
+      "bron": "plan",
+      "status": "te bevestigen",
+      "notitie": "In plan geen lijn naar IT. Doorstroom per finaliteit hangt af van optie/klassenraad (levelx.be) – te bevestigen."
+    },
+    {
+      "van": "1b",
+      "naar": "2b-opstroom",
+      "type": "opstroom",
+      "bron": "plan",
+      "status": "te bevestigen",
+      "notitie": "Label in plan; traject te bevestigen."
+    },
+    {
+      "van": "dom:business",
+      "naar": "bus-2-bw",
+      "type": "domeinkeuze",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "dom:business",
+      "naar": "bus-2-bo",
+      "type": "domeinkeuze",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "dom:business",
+      "naar": "bus-2-ol",
+      "type": "domeinkeuze",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "dom:business",
+      "naar": "bus-2-winkel-d",
+      "type": "domeinkeuze",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "dom:business",
+      "naar": "bus-2-verpakker-d",
+      "type": "domeinkeuze",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "dom:care",
+      "naar": "care-2-mww",
+      "type": "domeinkeuze",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "dom:care",
+      "naar": "care-2-mw",
+      "type": "domeinkeuze",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "dom:care",
+      "naar": "care-2-wl",
+      "type": "domeinkeuze",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "dom:care",
+      "naar": "care-2-zw",
+      "type": "domeinkeuze",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "dom:care",
+      "naar": "care-2-hs",
+      "type": "domeinkeuze",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "dom:care",
+      "naar": "care-2-keuken-d",
+      "type": "domeinkeuze",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "dom:care",
+      "naar": "care-2-fastfood-d",
+      "type": "domeinkeuze",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "dom:design",
+      "naar": "des-2-foto",
+      "type": "domeinkeuze",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "dom:design",
+      "naar": "des-2-gt",
+      "type": "domeinkeuze",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "dom:design",
+      "naar": "des-2-de",
+      "type": "domeinkeuze",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "dom:design",
+      "naar": "des-2-pm",
+      "type": "domeinkeuze",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "dom:design",
+      "naar": "des-2-schilder-d",
+      "type": "domeinkeuze",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "dom:stem",
+      "naar": "stem-2-tw",
+      "type": "domeinkeuze",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "dom:stem",
+      "naar": "stem-2-bsw",
+      "type": "domeinkeuze",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "dom:stem",
+      "naar": "stem-2-bt",
+      "type": "domeinkeuze",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "dom:stem",
+      "naar": "stem-2-emt",
+      "type": "domeinkeuze",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "dom:stem",
+      "naar": "stem-2-auto",
+      "type": "domeinkeuze",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "dom:stem",
+      "naar": "stem-2-elek",
+      "type": "domeinkeuze",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "dom:stem",
+      "naar": "stem-2-mech",
+      "type": "domeinkeuze",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "dom:stem",
+      "naar": "stem-2-hout",
+      "type": "domeinkeuze",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "bus-2-bw",
+      "naar": "bus-3-bw",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "bus-2-bo",
+      "naar": "bus-3-bo",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "bus-2-ol",
+      "naar": "bus-3-oos",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "bus-2-winkel-d",
+      "naar": "bus-3-oos-d",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "bus-2-verpakker-d",
+      "naar": "bus-3-log-d",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "care-2-mww",
+      "naar": "care-3-ww",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "care-2-mw",
+      "naar": "care-3-ob",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "care-2-wl",
+      "naar": "care-3-ws",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "care-2-hs",
+      "naar": "care-3-haar",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "care-2-zw",
+      "naar": "care-3-bzo",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "care-2-keuken-d",
+      "naar": "care-3-rk-d",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "care-2-fastfood-d",
+      "naar": "care-3-rk-d",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "des-2-foto",
+      "naar": "des-3-foto",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "des-2-gt",
+      "naar": "des-3-cm",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "des-2-de",
+      "naar": "des-3-dep",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "des-2-schilder-d",
+      "naar": "des-3-ds-d",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "des-2-pm",
+      "naar": "des-3-pm",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "te bevestigen",
+      "notitie": "2e-graads Printmedia is nieuw; doorstroom naar 3e graad volgens plan."
+    },
+    {
+      "van": "stem-2-tw",
+      "naar": "stem-3-twe",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "stem-2-bsw",
+      "naar": "stem-3-bcsw",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "stem-2-bt",
+      "naar": "stem-3-bct",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "stem-2-emt",
+      "naar": "stem-3-emt",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "stem-2-auto",
+      "naar": "stem-3-oma",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "stem-2-auto",
+      "naar": "stem-3-oma-d",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": "Duale variant enkel in 6e jaar (levelx.be)."
+    },
+    {
+      "van": "stem-2-elek",
+      "naar": "stem-3-ei",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "stem-2-elek",
+      "naar": "stem-3-ei-d",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": "Duale variant enkel in 6e jaar (levelx.be)."
+    },
+    {
+      "van": "stem-2-elek",
+      "naar": "stem-3-fi",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "stem-2-mech",
+      "naar": "stem-3-car",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "stem-2-mech",
+      "naar": "stem-3-car-d",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": "Duale variant enkel in 6e jaar (levelx.be)."
+    },
+    {
+      "van": "stem-2-hout",
+      "naar": "stem-3-bsi",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "care-2-mww",
+      "naar": "care-3-gz",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "te bevestigen",
+      "notitie": "afgeleid uit verticale verbindingslijn (knooppunt) in plan"
+    },
+    {
+      "van": "care-2-mww",
+      "naar": "care-3-ob",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "te bevestigen",
+      "notitie": "afgeleid uit verticale verbindingslijn (knooppunt) in plan"
+    },
+    {
+      "van": "care-2-mw",
+      "naar": "care-3-gz",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "te bevestigen",
+      "notitie": "afgeleid uit verticale verbindingslijn (knooppunt) in plan"
+    },
+    {
+      "van": "stem-2-tw",
+      "naar": "stem-3-bcsw",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "te bevestigen",
+      "notitie": "afgeleid uit verticale verbindingslijn (knooppunt) in plan"
+    },
+    {
+      "van": "stem-2-bsw",
+      "naar": "stem-3-twe",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "te bevestigen",
+      "notitie": "afgeleid uit verticale verbindingslijn (knooppunt) in plan"
+    },
+    {
+      "van": "stem-2-bsw",
+      "naar": "stem-3-bct",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "te bevestigen",
+      "notitie": "afgeleid uit verticale verbindingslijn (knooppunt) in plan"
+    },
+    {
+      "van": "stem-2-elek",
+      "naar": "stem-3-fi-d",
+      "type": "doorstroom",
+      "bron": "plan",
+      "status": "te bevestigen",
+      "notitie": "Duale Fietsinstallaties bestaat niet op levelx.be."
+    },
+    {
+      "van": "stem-2-mech",
+      "naar": "stem-3-fi",
+      "type": "doorstroom",
+      "bron": "levelx.be",
+      "status": "te bevestigen",
+      "notitie": "levelx.be: Mechanica bereidt voor op carrosserie én fietsinstallaties; plan verbindt Fietsinstallaties met Elektriciteit."
+    },
+    {
+      "van": "stem-2-tw",
+      "naar": "it-3-icw",
+      "type": "doorstroom",
+      "bron": "plan + levelx.be",
+      "status": "bevestigd",
+      "notitie": "Groen sterretje (STEM) in plan; levelx.be: technologische wetenschappen met extra programmeren."
+    },
+    {
+      "van": "des-2-gt",
+      "naar": "it-3-adb",
+      "type": "doorstroom",
+      "bron": "plan + levelx.be",
+      "status": "bevestigd",
+      "notitie": "Blauwgroen sterretje (Design) in plan; levelx.be noemt grafische technieken als vooropleiding."
+    },
+    {
+      "van": "stem-2-emt",
+      "naar": "it-3-adb",
+      "type": "doorstroom",
+      "bron": "levelx.be",
+      "status": "te bevestigen",
+      "notitie": "Alleen op levelx.be (vooropleiding elektromechanische technieken met extra programmeren); niet zichtbaar in plan."
+    },
+    {
+      "van": "it-2-via-stem",
+      "naar": "it-3-icw",
+      "type": "verwijzing",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "it-2-via-design",
+      "naar": "it-3-adb",
+      "type": "verwijzing",
+      "bron": "plan",
+      "status": "te bevestigen",
+      "notitie": null
+    },
+    {
+      "van": "dom:leren-werken",
+      "naar": "bus-2-winkel-d",
+      "type": "duaal-traject",
+      "bron": "levelx.be",
+      "status": "bevestigd",
+      "notitie": "Instap duaal: 16 jaar, of 15 jaar met afgeronde eerste graad (levelx.be)."
+    },
+    {
+      "van": "dom:leren-werken",
+      "naar": "bus-2-verpakker-d",
+      "type": "duaal-traject",
+      "bron": "levelx.be",
+      "status": "bevestigd",
+      "notitie": "Instap duaal: 16 jaar, of 15 jaar met afgeronde eerste graad (levelx.be)."
+    },
+    {
+      "van": "dom:leren-werken",
+      "naar": "care-2-keuken-d",
+      "type": "duaal-traject",
+      "bron": "levelx.be",
+      "status": "bevestigd",
+      "notitie": "Instap duaal: 16 jaar, of 15 jaar met afgeronde eerste graad (levelx.be)."
+    },
+    {
+      "van": "dom:leren-werken",
+      "naar": "care-2-fastfood-d",
+      "type": "duaal-traject",
+      "bron": "levelx.be",
+      "status": "bevestigd",
+      "notitie": "Instap duaal: 16 jaar, of 15 jaar met afgeronde eerste graad (levelx.be)."
+    },
+    {
+      "van": "dom:leren-werken",
+      "naar": "des-2-schilder-d",
+      "type": "duaal-traject",
+      "bron": "levelx.be",
+      "status": "bevestigd",
+      "notitie": "Instap duaal: 16 jaar, of 15 jaar met afgeronde eerste graad (levelx.be)."
+    },
+    {
+      "van": "dom:care",
+      "naar": "care-3-haar-d",
+      "type": "rechtstreekse instap",
+      "bron": "plan",
+      "status": "te bevestigen",
+      "notitie": "Lijn vertrekt rechtstreeks uit de arbeidsmarkt-tak van Care, zonder 2e-graadshalte. Toelating te bevestigen."
+    },
+    {
+      "van": "dom:care",
+      "naar": "care-3-bzo-d",
+      "type": "rechtstreekse instap",
+      "bron": "plan",
+      "status": "te bevestigen",
+      "notitie": "Lijn vertrekt rechtstreeks uit de arbeidsmarkt-tak van Care, zonder 2e-graadshalte. Toelating te bevestigen."
+    },
+    {
+      "van": "dom:care",
+      "naar": "care-3-awzw-d",
+      "type": "rechtstreekse instap",
+      "bron": "plan",
+      "status": "te bevestigen",
+      "notitie": "Lijn vertrekt rechtstreeks uit de arbeidsmarkt-tak van Care, zonder 2e-graadshalte. Toelating te bevestigen."
+    },
+    {
+      "van": "bus-3-oos-d",
+      "naar": "bus-7-ca-d",
+      "type": "specialisatie",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "care-3-haar-d",
+      "naar": "care-7-ks-d",
+      "type": "specialisatie",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "care-3-awzw-d",
+      "naar": "care-7-zk-d",
+      "type": "specialisatie",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": "levelx.be: na Assistentie wonen → BK4 Zorgkundige duaal."
+    },
+    {
+      "van": "care-3-bzo-d",
+      "naar": "care-7-zk-d",
+      "type": "specialisatie",
+      "bron": "plan",
+      "status": "te bevestigen",
+      "notitie": "Gebogen lijn in plan; te bevestigen."
+    },
+    {
+      "van": "des-3-ds-d",
+      "naar": "des-7-fs-d",
+      "type": "specialisatie",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "des-3-pm",
+      "naar": "des-7-odd-d",
+      "type": "specialisatie",
+      "bron": "plan",
+      "status": "te bevestigen",
+      "notitie": "Operator digitaal drukken niet op levelx.be."
+    },
+    {
+      "van": "stem-3-oma",
+      "naar": "stem-7-pm",
+      "type": "specialisatie",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "stem-3-oma-d",
+      "naar": "stem-7-pm-d",
+      "type": "specialisatie",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "stem-3-ei",
+      "naar": "stem-7-et",
+      "type": "specialisatie",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "stem-3-ei-d",
+      "naar": "stem-7-et-d",
+      "type": "specialisatie",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "stem-3-car",
+      "naar": "stem-7-sc",
+      "type": "specialisatie",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "stem-3-car-d",
+      "naar": "stem-7-sc-d",
+      "type": "specialisatie",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "stem-3-bsi",
+      "naar": "stem-7-ib-d",
+      "type": "specialisatie",
+      "bron": "plan",
+      "status": "te bevestigen",
+      "notitie": "Interieurbouwer niet op levelx.be."
+    },
+    {
+      "van": "?",
+      "naar": "stem-7-abc",
+      "type": "specialisatie",
+      "bron": "plan",
+      "status": "te bevestigen",
+      "notitie": "Geen inkomende lijn in plan; vooropleiding te bevestigen."
+    },
+    {
+      "van": "bus-3-bw",
+      "naar": "uit-ho",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit doorstroomfinaliteit."
+    },
+    {
+      "van": "bus-3-bo",
+      "naar": "uit-ho",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit dubbele finaliteit."
+    },
+    {
+      "van": "bus-3-bo",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit dubbele finaliteit."
+    },
+    {
+      "van": "bus-3-oos",
+      "naar": "7nxt",
+      "type": "schakeljaar",
+      "bron": "plan + levelx.be",
+      "status": "bevestigd",
+      "notitie": "Halte op de 7e-jaarslijn naar 7NXT; levelx.be: 7NXT voor diploma arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "bus-3-oos",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "bus-3-oos-d",
+      "naar": "7nxt",
+      "type": "schakeljaar",
+      "bron": "plan + levelx.be",
+      "status": "bevestigd",
+      "notitie": "Halte op de 7e-jaarslijn naar 7NXT; levelx.be: 7NXT voor diploma arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "bus-3-oos-d",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "bus-3-log-d",
+      "naar": "7nxt",
+      "type": "schakeljaar",
+      "bron": "plan + levelx.be",
+      "status": "bevestigd",
+      "notitie": "Halte op de 7e-jaarslijn naar 7NXT; levelx.be: 7NXT voor diploma arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "bus-3-log-d",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "care-3-ww",
+      "naar": "uit-ho",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit doorstroomfinaliteit."
+    },
+    {
+      "van": "care-3-gz",
+      "naar": "uit-ho",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit dubbele finaliteit."
+    },
+    {
+      "van": "care-3-gz",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit dubbele finaliteit."
+    },
+    {
+      "van": "care-3-ob",
+      "naar": "uit-ho",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit dubbele finaliteit."
+    },
+    {
+      "van": "care-3-ob",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit dubbele finaliteit."
+    },
+    {
+      "van": "care-3-ws",
+      "naar": "uit-ho",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit dubbele finaliteit."
+    },
+    {
+      "van": "care-3-ws",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit dubbele finaliteit."
+    },
+    {
+      "van": "care-3-haar",
+      "naar": "7nxt",
+      "type": "schakeljaar",
+      "bron": "plan + levelx.be",
+      "status": "bevestigd",
+      "notitie": "Halte op de 7e-jaarslijn naar 7NXT; levelx.be: 7NXT voor diploma arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "care-3-haar",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "care-3-haar-d",
+      "naar": "7nxt",
+      "type": "schakeljaar",
+      "bron": "plan + levelx.be",
+      "status": "bevestigd",
+      "notitie": "Halte op de 7e-jaarslijn naar 7NXT; levelx.be: 7NXT voor diploma arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "care-3-haar-d",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "care-3-bzo",
+      "naar": "7nxt",
+      "type": "schakeljaar",
+      "bron": "plan + levelx.be",
+      "status": "bevestigd",
+      "notitie": "Halte op de 7e-jaarslijn naar 7NXT; levelx.be: 7NXT voor diploma arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "care-3-bzo",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "care-3-bzo-d",
+      "naar": "7nxt",
+      "type": "schakeljaar",
+      "bron": "plan + levelx.be",
+      "status": "bevestigd",
+      "notitie": "Halte op de 7e-jaarslijn naar 7NXT; levelx.be: 7NXT voor diploma arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "care-3-bzo-d",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "care-3-rk-d",
+      "naar": "7nxt",
+      "type": "schakeljaar",
+      "bron": "levelx.be",
+      "status": "te bevestigen",
+      "notitie": "A-richting maar geen halte op 7e-jaarslijn in plan; volgens levelx.be wel toegelaten met A-diploma."
+    },
+    {
+      "van": "care-3-rk-d",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "care-3-awzw-d",
+      "naar": "7nxt",
+      "type": "schakeljaar",
+      "bron": "plan + levelx.be",
+      "status": "bevestigd",
+      "notitie": "Halte op de 7e-jaarslijn naar 7NXT; levelx.be: 7NXT voor diploma arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "care-3-awzw-d",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "des-3-foto",
+      "naar": "uit-ho",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit dubbele finaliteit."
+    },
+    {
+      "van": "des-3-foto",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit dubbele finaliteit."
+    },
+    {
+      "van": "des-3-cm",
+      "naar": "uit-ho",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit dubbele finaliteit."
+    },
+    {
+      "van": "des-3-cm",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit dubbele finaliteit."
+    },
+    {
+      "van": "des-3-dep",
+      "naar": "7nxt",
+      "type": "schakeljaar",
+      "bron": "plan + levelx.be",
+      "status": "bevestigd",
+      "notitie": "Halte op de 7e-jaarslijn naar 7NXT; levelx.be: 7NXT voor diploma arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "des-3-dep",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "des-3-pm",
+      "naar": "7nxt",
+      "type": "schakeljaar",
+      "bron": "plan + levelx.be",
+      "status": "bevestigd",
+      "notitie": "Halte op de 7e-jaarslijn naar 7NXT; levelx.be: 7NXT voor diploma arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "des-3-pm",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "des-3-ds-d",
+      "naar": "7nxt",
+      "type": "schakeljaar",
+      "bron": "plan + levelx.be",
+      "status": "bevestigd",
+      "notitie": "Halte op de 7e-jaarslijn naar 7NXT; levelx.be: 7NXT voor diploma arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "des-3-ds-d",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "it-3-icw",
+      "naar": "uit-ho",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit doorstroomfinaliteit."
+    },
+    {
+      "van": "it-3-adb",
+      "naar": "uit-ho",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit dubbele finaliteit."
+    },
+    {
+      "van": "it-3-adb",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit dubbele finaliteit."
+    },
+    {
+      "van": "stem-3-twe",
+      "naar": "uit-ho",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit doorstroomfinaliteit."
+    },
+    {
+      "van": "stem-3-bcsw",
+      "naar": "uit-ho",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit doorstroomfinaliteit."
+    },
+    {
+      "van": "stem-3-bct",
+      "naar": "uit-ho",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit dubbele finaliteit."
+    },
+    {
+      "van": "stem-3-bct",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit dubbele finaliteit."
+    },
+    {
+      "van": "stem-3-emt",
+      "naar": "uit-ho",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit dubbele finaliteit."
+    },
+    {
+      "van": "stem-3-emt",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit dubbele finaliteit."
+    },
+    {
+      "van": "stem-3-oma",
+      "naar": "7nxt",
+      "type": "schakeljaar",
+      "bron": "plan + levelx.be",
+      "status": "bevestigd",
+      "notitie": "Halte op de 7e-jaarslijn naar 7NXT; levelx.be: 7NXT voor diploma arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "stem-3-oma",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "stem-3-oma-d",
+      "naar": "7nxt",
+      "type": "schakeljaar",
+      "bron": "plan + levelx.be",
+      "status": "bevestigd",
+      "notitie": "Halte op de 7e-jaarslijn naar 7NXT; levelx.be: 7NXT voor diploma arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "stem-3-oma-d",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "stem-3-ei",
+      "naar": "7nxt",
+      "type": "schakeljaar",
+      "bron": "plan + levelx.be",
+      "status": "bevestigd",
+      "notitie": "Halte op de 7e-jaarslijn naar 7NXT; levelx.be: 7NXT voor diploma arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "stem-3-ei",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "stem-3-ei-d",
+      "naar": "7nxt",
+      "type": "schakeljaar",
+      "bron": "plan + levelx.be",
+      "status": "bevestigd",
+      "notitie": "Halte op de 7e-jaarslijn naar 7NXT; levelx.be: 7NXT voor diploma arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "stem-3-ei-d",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "stem-3-fi",
+      "naar": "7nxt",
+      "type": "schakeljaar",
+      "bron": "levelx.be",
+      "status": "te bevestigen",
+      "notitie": "A-richting maar geen halte op 7e-jaarslijn in plan; volgens levelx.be wel toegelaten met A-diploma."
+    },
+    {
+      "van": "stem-3-fi",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "stem-3-fi-d",
+      "naar": "7nxt",
+      "type": "schakeljaar",
+      "bron": "levelx.be",
+      "status": "te bevestigen",
+      "notitie": "A-richting maar geen halte op 7e-jaarslijn in plan; volgens levelx.be wel toegelaten met A-diploma."
+    },
+    {
+      "van": "stem-3-fi-d",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "stem-3-car",
+      "naar": "7nxt",
+      "type": "schakeljaar",
+      "bron": "plan + levelx.be",
+      "status": "bevestigd",
+      "notitie": "Halte op de 7e-jaarslijn naar 7NXT; levelx.be: 7NXT voor diploma arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "stem-3-car",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "stem-3-car-d",
+      "naar": "7nxt",
+      "type": "schakeljaar",
+      "bron": "plan + levelx.be",
+      "status": "bevestigd",
+      "notitie": "Halte op de 7e-jaarslijn naar 7NXT; levelx.be: 7NXT voor diploma arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "stem-3-car-d",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "stem-3-bsi",
+      "naar": "7nxt",
+      "type": "schakeljaar",
+      "bron": "plan + levelx.be",
+      "status": "bevestigd",
+      "notitie": "Halte op de 7e-jaarslijn naar 7NXT; levelx.be: 7NXT voor diploma arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "stem-3-bsi",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "finaliteit",
+      "status": "bevestigd",
+      "notitie": "Volgt uit arbeidsmarktfinaliteit."
+    },
+    {
+      "van": "bus-7-ca-d",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "levelx.be",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "care-7-ks-d",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "levelx.be",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "care-7-zk-d",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "levelx.be",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "des-7-fs-d",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "levelx.be",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "des-7-odd-d",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "levelx.be",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "stem-7-abc",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "levelx.be",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "stem-7-pm",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "levelx.be",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "stem-7-pm-d",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "levelx.be",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "stem-7-et",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "levelx.be",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "stem-7-et-d",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "levelx.be",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "stem-7-sc",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "levelx.be",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "stem-7-sc-d",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "levelx.be",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "stem-7-ib-d",
+      "naar": "uit-am",
+      "type": "uitstroom",
+      "bron": "levelx.be",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "7nxt",
+      "naar": "uit-pba",
+      "type": "uitstroom",
+      "bron": "levelx.be",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "dom:wereldklas",
+      "naar": "wk-okan",
+      "type": "instroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": null
+    },
+    {
+      "van": "wk-okan",
+      "naar": "uit-vervolg",
+      "type": "uitstroom",
+      "bron": "plan",
+      "status": "bevestigd",
+      "notitie": "Plan: Wereldklas → Vervolgonderwijs."
+    }
+  ]
+}
