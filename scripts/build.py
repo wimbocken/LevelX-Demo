@@ -244,7 +244,7 @@ def asset_version():
 
 
 def chrome(title, description, depth, active, body, banner_extra=""):
-    # banner_extra is homepage-only (the wauw variant link). Other pages pass "".
+    # banner_extra is homepage-only (the variant switcher). Other pages pass "".
     root = "../" * depth
     version = asset_version()
     nav_links = []
@@ -496,7 +496,13 @@ def home():
             0,
             "",
             body,
-            banner_extra=' <a href="wauw/">Bekijk ook de wauw-versie</a>',
+            banner_extra=(
+                ' <span class="variant-switch">Versie: '
+                '<a href="./" aria-current="page">Groen</a> · '
+                '<a href="wauw/">Wauw</a> · '
+                '<a href="cinematic/">Cinematic</a> · '
+                '<a href="professioneel/">Professioneel</a></span>'
+            ),
         ),
     )
 
