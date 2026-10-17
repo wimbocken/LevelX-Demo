@@ -243,7 +243,8 @@ def asset_version():
     return digest.hexdigest()[:10]
 
 
-def chrome(title, description, depth, active, body):
+def chrome(title, description, depth, active, body, banner_extra=""):
+    # banner_extra is homepage-only (the wauw variant link). Other pages pass "".
     root = "../" * depth
     version = asset_version()
     nav_links = []
@@ -266,7 +267,7 @@ def chrome(title, description, depth, active, body):
 <body>
   <a class="skip" href="#inhoud">Spring naar de inhoud</a>
   <div class="top-stack">
-    <p class="demo-banner">Demo — dit is geen officiële website van GO! Next Level X. Niet-geverifieerde gegevens staan tussen [te bevestigen].</p>
+    <p class="demo-banner">Demo — dit is geen officiële website van GO! Next Level X. Niet-geverifieerde gegevens staan tussen [te bevestigen].{banner_extra}</p>
     <div class="util-bar">
       <div class="wrap">
         <a href="{root}praktisch/#smartschool">Smartschool</a>
@@ -495,6 +496,7 @@ def home():
             0,
             "",
             body,
+            banner_extra=' <a href="wauw/">Bekijk ook de wauw-versie</a>',
         ),
     )
 

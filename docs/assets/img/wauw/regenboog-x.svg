@@ -1,0 +1,19 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Regenboog-X">
+<rect id="Rectangle" x="-21.7336" y="515.668" width="760" height="150" rx="75" transform="rotate(-45 -21.7336 515.668)" fill="url(#paint0_linear_0_207)"/>
+<rect id="Rectangle_2" x="84.3324" y="-21.7336" width="760" height="150" rx="75" transform="rotate(45 84.3324 -21.7336)" fill="url(#paint1_linear_0_207)"/>
+<circle id="Glans" opacity="0.35" cx="300" cy="300" r="75" fill="white"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_207" x1="-21.7336" y1="590.668" x2="738.266" y2="590.668" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1CA550"/>
+<stop offset="0.5" stop-color="#04A182"/>
+<stop offset="1" stop-color="#4E85C3"/>
+</linearGradient>
+<linearGradient id="paint1_linear_0_207" x1="84.3324" y1="53.2664" x2="844.332" y2="53.2664" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E34B63"/>
+<stop offset="0.5" stop-color="#E77558"/>
+<stop offset="1" stop-color="#ECA526"/>
+</linearGradient>
+</defs>
+</svg>
